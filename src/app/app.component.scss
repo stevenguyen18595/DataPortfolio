@@ -1,0 +1,26 @@
+:host,
+.drawer-container {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--color-neutral-200);
+  position: inherit;
+
+  mat-drawer {
+    .side-panel-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  mat-drawer-content {
+    position: inherit;
+  }
+}
+
+.side-panel-container {
+  height: calc(100% - 50px);
+  background-color: var(--color-neutral-800);
+  position: fixed;
+  margin-top: 50px;
+}

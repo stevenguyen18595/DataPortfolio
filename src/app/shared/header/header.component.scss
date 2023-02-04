@@ -1,0 +1,16 @@
+.header-container {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0px;
+  z-index: 800;
+  background-color: var(--color-neutral-700);
+  padding-left: var(--space-2xl);
+  display: flex;
+  align-items: center;
+
+  mat-icon {
+    color: var(--color-neutral-50);
+    cursor: pointer;
+  }
+}

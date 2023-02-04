@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
-  declarations: [],
-  imports: [],
+  declarations: [HeaderComponent],
+  imports: [MatSidenavModule, MatIconModule],
   providers: [],
-  exports: [],
+  exports: [MatSidenavModule, MatIconModule, HeaderComponent],
 })
 export class SharedModule {}
