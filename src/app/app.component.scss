@@ -1,17 +1,15 @@
 @use "variables";
 :host,
 .drawer-container {
-  width: 100%;
+  width: 20%;
   min-height: 100%;
-  background-color: variables.$dp-black-2;
   position: inherit;
 
   mat-drawer {
     .side-panel-content {
       height: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
   mat-drawer-content {
@@ -20,6 +18,7 @@
 }
 
 .side-panel-container {
+  width: 20%;
   height: calc(100% - 50px);
   background-color: variables.$dp-black-0;
   position: fixed;

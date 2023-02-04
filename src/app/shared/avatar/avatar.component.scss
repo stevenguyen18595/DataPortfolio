@@ -1,0 +1,19 @@
+@use "variables";
+
+:host {
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  h3 {
+    color: variables.$dp-black-2;
+    width: 100%;
+    text-align: center;
+  }
+  mat-divider {
+    align-self: center;
+    color: variables.$dp-black-2;
+    width: 50%;
+  }
+}
