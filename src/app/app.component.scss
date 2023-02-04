@@ -1,8 +1,9 @@
+@use "variables";
 :host,
 .drawer-container {
   width: 100%;
   min-height: 100%;
-  background-color: var(--color-neutral-200);
+  background-color: variables.$dp-black-2;
   position: inherit;
 
   mat-drawer {
@@ -20,7 +21,7 @@
 
 .side-panel-container {
   height: calc(100% - 50px);
-  background-color: var(--color-neutral-800);
+  background-color: variables.$dp-black-0;
   position: fixed;
   margin-top: 50px;
 }
