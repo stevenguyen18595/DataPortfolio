@@ -1,4 +1,8 @@
-<div class="d-flex justify-content-start">
+<div
+  class="d-flex justify-content-start"
+  (click)="navigateToPage(route)"
+  [ngClass]="{ active: isActive }"
+>
   <mat-icon>{{ matIconName }}</mat-icon>
   <div class="p-3 section-name">{{ sectionName }}</div>
 </div>

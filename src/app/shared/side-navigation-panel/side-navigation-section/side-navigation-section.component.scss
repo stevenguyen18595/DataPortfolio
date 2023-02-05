@@ -1,6 +1,7 @@
 @use "variables";
 
 :host {
+  cursor: pointer;
   mat-icon {
     align-self: center;
     color: variables.$dp-black-2;
