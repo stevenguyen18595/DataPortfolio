@@ -3,12 +3,16 @@
 :host {
   cursor: pointer;
   mat-icon {
-    align-self: center;
     color: variables.$dp-black-2;
     align-self: center;
   }
   .section-name {
     font-size: 20px;
     color: variables.$dp-black-2;
+  }
+  & :hover,
+  :active {
+    background-color: variables.$dp-black-1;
+    border-radius: 1rem;
   }
 }
