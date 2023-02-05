@@ -1,0 +1,13 @@
+@use "variables";
+
+:host {
+  mat-icon {
+    align-self: center;
+    color: variables.$dp-black-2;
+    align-self: center;
+  }
+  .section-name {
+    font-size: 20px;
+    color: variables.$dp-black-2;
+  }
+}
