@@ -1,4 +1,6 @@
-@use "variables";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
 :host,
 .drawer-container {
   min-height: 100%;
@@ -16,8 +18,14 @@
 }
 
 .side-panel-container {
-  max-width: 17%;
+  max-width: 10%;
   height: calc(100% - 50px);
   background-color: variables.$dp-black-0;
   margin-top: 50px;
+  @include mixins.screen-under-sm {
+    max-width: 90%;
+    height: calc(100% - 50px);
+    background-color: variables.$dp-black-0;
+    margin-top: 50px;
+  }
 }

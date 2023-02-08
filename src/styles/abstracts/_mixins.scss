@@ -1,0 +1,61 @@
+@use "variables" as *;
+
+@mixin screen-xs {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin screen-sm {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin screen-xmd {
+  @media (min-width: $xmd) {
+    @content;
+  }
+}
+
+@mixin screen-under-sm {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin screen-under-md {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin screen-under-lg {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin screen-under-xl {
+  @media (max-width: $xl) {
+    @content;
+  }
+}

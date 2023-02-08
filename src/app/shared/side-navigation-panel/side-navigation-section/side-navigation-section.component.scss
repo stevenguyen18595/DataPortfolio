@@ -1,7 +1,13 @@
-@use "variables";
+@use "abstracts/variables";
 
 :host {
   cursor: pointer;
+  & > :hover,
+  :active {
+    background-color: variables.$dp-black-1;
+    border-radius: 0.1rem;
+    border-bottom: 0.1px solid variables.$dp-black-2;
+  }
   mat-icon {
     color: variables.$dp-black-2;
     align-self: center;
@@ -9,10 +15,5 @@
   .section-name {
     font-size: 20px;
     color: variables.$dp-black-2;
-  }
-  & :hover,
-  :active {
-    background-color: variables.$dp-black-1;
-    border-radius: 1rem;
   }
 }
