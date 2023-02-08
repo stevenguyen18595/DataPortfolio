@@ -1,1 +1,16 @@
-@use "abstracts";
+@use "abstracts" as *;
+@use "./abstracts/variables";
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+
+  * {
+    font-family: variables.$primary-font-family;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
