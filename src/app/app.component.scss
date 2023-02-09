@@ -1,34 +1,33 @@
 @use "abstracts/variables";
 @use "abstracts/mixins";
 
-:host,
-.drawer-container {
-  min-height: 100%;
-  position: inherit;
+:host {
+  .drawer-container {
+    min-height: 100%;
+    position: inherit;
 
-  mat-drawer {
-    .side-panel-content {
-      height: 100%;
-      width: 100%;
+    mat-drawer {
+      .side-panel-content {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    mat-drawer-content {
+      position: inherit;
     }
   }
-  mat-drawer-content {
-    position: inherit;
-  }
-}
 
-.side-panel-container {
-  max-width: 10%;
-  height: calc(100% - 50px);
-  background-color: variables.$dp-black-0;
-  margin-top: 50px;
-}
-
-@include mixins.screen-under-sm {
   .side-panel-container {
-    max-width: 30%;
-    height: calc(100% - 50px);
+    max-width: 10%;
+    height: calc(100% - 100px);
     background-color: variables.$dp-black-0;
-    margin-top: 50px;
+    margin-top: 100px;
+  }
+
+  @include mixins.screen-under-sm {
+    .side-panel-container {
+      max-width: 30%;
+      background-color: variables.$dp-black-0;
+    }
   }
 }
