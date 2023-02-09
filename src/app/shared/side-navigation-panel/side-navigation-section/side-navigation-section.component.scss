@@ -14,7 +14,7 @@
     align-self: center;
   }
   .section-name {
-    font-size: 20px;
+    font-size: 1rem;
     color: variables.$dp-black-2;
     padding: 0.8rem;
   }
@@ -22,6 +22,24 @@
 
 //phone version
 @include mixins.screen-under-sm {
+  :host {
+    mat-icon {
+      color: variables.$dp-black-2;
+      align-self: center;
+      font-size: 12px;
+      height: 12px;
+      text-align: center;
+    }
+    .section-name {
+      padding: 0.2rem;
+      font-size: 0.8rem;
+      color: variables.$dp-black-2;
+    }
+  }
+}
+
+//ipad version
+@include mixins.screen-under-md {
   :host {
     mat-icon {
       color: variables.$dp-black-2;

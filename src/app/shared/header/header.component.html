@@ -1,13 +1,13 @@
 <div *ngIf="isNavExpanded; else closedNavbar">
   <div class="header-container">
     <mat-icon (click)="handleMenuOpen()">keyboard_arrow_right</mat-icon>
-    <h1 class="ms-5">Hello, I'm Trang Vu</h1>
+    <div class="ms-3 greeting">Hello, I'm Trang Vu</div>
   </div>
 </div>
 
 <ng-template #closedNavbar>
   <div class="header-container">
     <mat-icon (click)="handleMenuClose()">keyboard_arrow_left</mat-icon>
-    <h1 class="ms-5">Hello, I'm Trang Vu</h1>
+    <div class="ms-3 greeting">I'm a Data Analyst</div>
   </div>
 </ng-template>

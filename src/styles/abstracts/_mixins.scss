@@ -1,5 +1,11 @@
 @use "variables" as *;
 
+@mixin screen-xxs {
+  @media (max-width: $xsm) {
+    @content;
+  }
+}
+
 @mixin screen-xs {
   @media (max-width: $sm) {
     @content;

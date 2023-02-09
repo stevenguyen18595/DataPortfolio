@@ -1,4 +1,5 @@
 @use "abstracts/variables";
+@use "abstracts/mixins";
 
 :host {
   .header-container {
@@ -18,15 +19,21 @@
       color: variables.$dp-white;
       cursor: pointer;
 
-      border: 1px solid variables.$dp-white;
+      border: 2px solid variables.$dp-white;
       border-radius: 50%;
 
       padding: 9px;
       margin-left: 2rem;
     }
-    h1 {
+    .greeting {
       color: variables.$dp-white;
-      margin-bottom: 0;
+      font-size: 50px;
+    }
+    @include mixins.screen-under-sm {
+      .greeting {
+        color: variables.$dp-white;
+        font-size: 17px;
+      }
     }
   }
 }
